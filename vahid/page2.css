@@ -1,0 +1,31 @@
+#mainNavbar .navbar-brand{
+	color: #27e01d;
+}
+
+#mainNavbar .nav-link{
+	color: white;
+}
+
+.active {
+
+  border-bottom: 3.5px solid red;
+  
+
+}
+
+.card{
+	margin: 1.66%;
+	margin-top: 1.25rem;
+	float: left;;
+}
+
+.card-text{
+	float: left;
+}
+.row{
+	text-align: center;
+}
+
+.btn-primary:hover{
+	font-size: 1.05rem;
+}

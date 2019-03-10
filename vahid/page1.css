@@ -1,0 +1,25 @@
+body{
+	font-family: Oleo Script;
+	font-weight: bold;
+	background: url(https://assets.uuworld.org/sites/live-new.uuworld.org/files/styles/scaled_960_wide_no_upscale/public/istock-678573106-smaller.jpg?itok=sDKAwLhI&timestamp=1523631303);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #0d0f11;
+}
+
+h1 {
+	font-weight: bold;
+
+}
+
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+
+}
+hr{
+	width: 400px;
+	border-top: 1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0,0.2)
+}
