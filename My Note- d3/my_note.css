@@ -7,16 +7,29 @@ h1 {
   text-align: center;
 }
 
-#notes {
-  margin: 0 auto;
+#notes, .preview {
+  margin: 0 auto 16px;
   width: 75%;
 }
+ 
+ .note, .preview{
+  border-radius: 8px;
+  padding: 10px;
+ }
 
 .note {
   background-color: #fdffb7;
   border: 8px solid #d4daa7;
-  border-radius: 8px;
-  padding: 10px;
+  margin: 16px 0;
+}
+
+.preview{
+  background-color: #b8ffba;
+  border: 8px solid #4caf50;
+  box-sizing: border-box;
+}
+.hide{
+  display: none;
 }
 
 form {
@@ -36,6 +49,20 @@ button {
   background-color: #ff9494;
   border: none;
   border-radius: 5px;
+}
+
+.remove{
+  background-color: red;
+}
+.remove:hover {
+  background-color: #b20e0e;
+}
+
+.lucky{
+  background-color: #33FF3F;
+}
+.lucky:hover {
+  background-color: #4caf50;
 }
 
 button:hover {
