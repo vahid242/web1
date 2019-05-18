@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Component 1</title>
+ 	<link rel="stylesheet" type="text/css" href="ex1.css">
+ 	<script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+ </head>
+ <body>
+ 	<div id="app"></div>
+ 	<script type="text/babel">
+ 		class HobbiesList extends React.Component{
+ 			render(){
+ 				const hobbies = ["sleeping", "eating", "cuddling"];
+ 				const liStyle={fontSize:  '1.5em'};
+ 				return(
+ 					 	<ul>
+ 							{hobbies.map((h, i) => {
+ 								return <li key={i} style={liStyle}>{h}</li>
+ 							})}
+ 						</ul>
+ 				)
+ 			}
+ 		}
+ 		class Pet extends React.Component{
+ 			render(){
+ 			return(
+ 				<div className="card">
+ 					<h2 className="name">maxi</h2>
+ 					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbviSJcx2a4U01BRinV9aTIrdxUBzy9ZCHs2WdNG49aanJilZG"
+ 						alt="My cat" />
+ 						<h5 style={{fontSize:'2em', margin:'2px'}}>Hobbies:</h5>
+ 						<HobbiesList />
+ 				</div>
+ 			)
+ 			}
+ 		}
+ 		ReactDOM.render(<Pet />, document.getElementById("app"))
+ 	</script>
+ 
+ </body>
+ </html>

@@ -1,0 +1,26 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Component 1</title>
+ 	<script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+	<script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+ 	<script src="https://unpkg.com/react-dom-factories@1.0.0/index.js"></script>
+ </head>
+ <body>
+ 	<div id="app"></div>
+ 	<script type="text/javascript">
+ 		class Pet extends React.Component{
+ 			render(){
+ 				const h2  = ReactDOMFactories.h2(null, "maxi");
+ 				const img = ReactDOMFactories.img({
+ 					src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbviSJcx2a4U01BRinV9aTIrdxUBzy9ZCHs2WdNG49aanJilZG",
+ 					alt:"My cat"
+ 				});
+ 				return ReactDOMFactories.div(null, h2, img);
+ 			}
+ 		}
+ 		ReactDOM.render(React.createElement(Pet), document.getElementById("app"))
+ 	</script>
+ 
+ </body>
+ </html>

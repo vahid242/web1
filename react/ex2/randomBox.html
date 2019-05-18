@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random Box</title>
+	<link rel="stylesheet" type="text/css" href="randomBox.css">
+	 	<script  src="https://unpkg.com/react@16/umd/react.development.js"></script>
+		<script  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+ 		<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"></script>
+</head>
+<body>
+	<div id="app"></div>
+	<script type="text/babel">
+		class Text extends React.Component{
+		render(){
+		const font = Math.floor(Math.random() * 60);
+		const backgroundColor=['red', 'green', 'black', 'blue'][Math.floor(Math.random() * 4]
+		return(
+			<p style={{fontSize:`${font}px`,backgroundColor, textAlign: 'center', padding: '100px'}}>Random Box</p>
+		)
+	}
+	}
+	ReactDOM.render(<Text />, document.getElementById("app"))
+	</script>
+
+</body>
+</html>
